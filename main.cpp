@@ -23,11 +23,12 @@ void exucute_effects()
     {
         thread t2(fill_screen_with_color, 0x0000FF);
 
-        // Ожидание завершения потоков
+        // join...
         t2.join();
     }
 }
 
+// main function
 int main()
 {
     exucute_effects();
